@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TITO SMM Store</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#0b0f19;
+color:white;
+margin:0;
+}
+
+.header{
+background:#111827;
+padding:20px;
+text-align:center;
+font-size:24px;
+font-weight:bold;
+}
+
+.sub{
+text-align:center;
+color:#9ca3af;
+margin-bottom:20px;
+}
+
+.container{
+max-width:500px;
+margin:auto;
+padding:15px;
+}
+
+.category{
+font-size:18px;
+margin-top:30px;
+margin-bottom:10px;
+color:#22c55e;
+}
+
+.card{
+background:#111827;
+padding:15px;
+border-radius:10px;
+margin-bottom:12px;
+}
+
+.service{
+font-size:16px;
+margin-bottom:5px;
+}
+
+.price{
+color:#22c55e;
+margin-bottom:10px;
+}
+
+button{
+background:#25D366;
+border:none;
+padding:10px 18px;
+border-radius:6px;
+color:white;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+TITO SMM STORE
+</div>
+
+<p class="sub">
+Instant Social Media Growth Services
+</p>
+
+<div class="container">
+
+<div class="category">Instagram</div>
+
+<div class="card">
+<div class="service">1000 Instagram Followers</div>
+<div class="price">₹199</div>
+<button onclick="order('Instagram Followers 1000')">Order</button>
+</div>
+
+<div class="card">
+<div class="service">1000 Instagram Likes</div>
+<div class="price">₹99</div>
+<button onclick="order('Instagram Likes 1000')">Order</button>
+</div>
+
+<div class="card">
+<div class="service">10000 Instagram Views</div>
+<div class="price">₹79</div>
+<button onclick="order('Instagram Views 10000')">Order</button>
+</div>
+
+<div class="category">YouTube</div>
+
+<div class="card">
+<div class="service">1000 YouTube Subscribers</div>
+<div class="price">₹399</div>
+<button onclick="order('YouTube Subscribers 1000')">Order</button>
+</div>
+
+<div class="card">
+<div class="service">4000 Watch Hours</div>
+<div class="price">₹4999</div>
+<button onclick="order('YouTube Watch Hours 4000')">Order</button>
+</div>
+
+<div class="category">Telegram</div>
+
+<div class="card">
+<div class="service">10000 Telegram Members</div>
+<div class="price">₹1899</div>
+<button onclick="order('Telegram Members 10000')">Order</button>
+</div>
+
+</div>
+
+<script>
+
+function order(service){
+
+var phone="91XXXXXXXXXX"
+
+var text="Hello I want to order:%0AService: "+service+"%0ALink:%0AQuantity:"
+
+var url="https://wa.me/"+phone+"?text="+text
+
+window.open(url)
+
+}
+
+</script>
+
+</body>
+</html>
